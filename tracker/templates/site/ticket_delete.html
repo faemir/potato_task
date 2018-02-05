@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h2>Delete ticket</h2>
+<p>Deleting {{ ticket }} ticket, are you sure?</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit" action="" value="Confirm ticket delete." />
+</form>
+{% endblock %}
